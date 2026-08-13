@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Registration Form</title>
+</head>
+
+<body>
+
+    <section>
+        <h1>Student Registration Form</h1>
+
+        <form action="/register" method="post">
+@csrf
+            <section>
+                <label>Roll No :</label>
+                <input type="text" name="rollno">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Student Name :</label>
+                <input type="text" placeholder="First Name" name="firstname">
+                <input type="text" placeholder="Last Name" name="lastname">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Father's Name :</label>
+                <input type="text" name="fathername">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Date of Birth :</label>
+                <input type="date" name="dob">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Mobile No :</label>
+                <input type="text" value="+91" size="2">
+                <input type="text" name="mobile">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Email ID :</label>
+                <input type="email" name="email">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Password :</label>
+                <input type="password" placeholder="Enter Password" name="password">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Gender :</label>
+                <input type="radio" name="gender" value="Male"> Male
+                <input type="radio" name="gender" value="Female"> Female
+            </section>
+
+            <br>
+
+            <section>
+                <label>Department :</label>
+                <input type="checkbox" name="dept" value="CSE"> CSE
+                <input type="checkbox" name="dept" value="IT"> IT
+                <input type="checkbox" name="dept" value="ECE"> ECE
+                <input type="checkbox" name="dept" value="Civil"> Civil
+                <input type="checkbox" name="dept" value="Mech"> Mech
+            </section>
+
+            <br>
+
+            <section>
+                <label>Course :</label>
+
+                <select name="course">
+                    <option>Select Current Course</option>
+                    <option>B.Tech</option>
+                    <option>BCA</option>
+                    <option>MCA</option>
+                    <option>B.Sc</option>
+                    <option>M.Tech</option>
+                </select>
+            </section>
+
+            <br>
+
+            <section>
+                <label>Student Photo :</label>
+                <input type="file" name="photo">
+            </section>
+
+            <br>
+
+            <section>
+                <label>City :</label>
+                <input type="text" name="city">
+            </section>
+
+            <br>
+
+            <section>
+                <label>Address :</label><br>
+                <textarea name="address" rows="5" cols="40"></textarea>
+            </section>
+
+            <br>
+
+            <section>
+                <button type="submit">Register</button>
+            </section>
+
+        </form>
+    </section>
+
+</body>
+</html>
